@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Figma Portfolio</title>
+    <title>My Portfolio</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #000; }
-        iframe { width: 100%; height: 100vh; border: none; }
+        /* 画面の余白をゼロにして、スクロールをiframe側に任せる設定 */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #ffffff; 
+        }
+        /* iframeをブラウザの画面いっぱいに広げる */
+        iframe { 
+            width: 100vw; 
+            height: 100vh; 
+            border: none;
+        }
     </style>
 </head>
 <body>
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/cGvXfOdlYTLs8se30JJvrr/Untitled?node-id=40-1324&embed-host=share" allowfullscreen></iframe>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://embed.figma.com/design/cGvXfOdlYTLs8se30JJvrr/Untitled?node-id=40-1324&embed-host=share" allowfullscreen></iframe>
     </body>
 </html>
